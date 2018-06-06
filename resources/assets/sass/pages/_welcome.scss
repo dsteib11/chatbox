@@ -1,0 +1,73 @@
+.app-container.welcome-page {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .welcome-message {
+    background: #fff;
+    border: 1px solid #333;
+    border-right: none;
+    padding: 10px;
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+
+    .login-buttons {
+      display: grid;
+      grid-template-rows: repeat(3fr, 1fr);
+      grid-gap: 1rem;
+      width: 100%;
+      max-width: 250px;
+
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        &:hover {
+          color: white;
+          background: black;
+        }
+      }
+      .google-btn {
+        background: red;
+        color: #fff;
+      }
+      .facebook-btn {
+        background: blue;
+        color: #fff;
+      }
+
+      hr {
+        height: 2px;
+        width: 100%;
+      }
+      .email-btn {
+        color: #fff;
+        background: linear-gradient(135deg, rgba(183,201,235,1) 0%, rgba(32,124,229,1) 100%);
+      }
+    }
+  }
+}
