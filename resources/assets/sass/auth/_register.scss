@@ -1,0 +1,53 @@
+.register-page {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #333;
+  }
+  .register-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    .form {
+      max-width: 400px;
+      min-width: 350px;
+    }
+
+    hr {
+      height: 1px;
+      width: 100%;
+      background: $border;
+    }
+
+    button {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+      &:hover {
+        color: white;
+        background: black;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 1rem;
+      display: block;
+      text-align: center;
+    }
+  }
+  .side-img {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url('https://images.pexels.com/photos/1083627/pexels-photo-1083627.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+  }
+}
