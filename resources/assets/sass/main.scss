@@ -3,9 +3,7 @@
 @import "variables";
 @import "pages/welcome";
 @import "pages/home";
-@import "auth/register";
-@import "auth/login";
-@import "auth/forgotPassword";
+@import "auth/auth";
 
 
 * {
@@ -16,6 +14,9 @@
   button {
       resize: none;
       outline: none;
+  }
+  a {
+    text-decoration: none;
   }
 }
 

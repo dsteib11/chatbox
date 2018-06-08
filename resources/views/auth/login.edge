@@ -5,9 +5,27 @@
 @endsection
 
 @section('current-class')
-  register-page
+  auth-page
 @endsection
 
-@section('content-area')
-  Register Page
+@section('content')
+    <div class="auth-form">
+      <h1>Chatbox</h1>
+      <form action="/login" method="post" class="default-form">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" value="" class="text">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" name="password" value="" class="text">
+        </div>
+        <hr>
+        <div class="form-group">
+          <button type="submit" name="">Login</button>
+        </div>
+        <a href="/forgot-password">Forgot Password</a>
+      </form>
+    </div>
+    <div class="side-img"></div>
 @endsection
